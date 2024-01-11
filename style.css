@@ -1,0 +1,26 @@
+body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh; 
+    flex-direction: column;
+}
+
+#btn {
+    display: flex;
+}
+
+#grid {
+    display: flex;
+    flex-wrap: wrap;
+    width:40%;
+}
+
+.customDiv {
+
+    /*width: calc(6.25%);*/
+    
+    aspect-ratio: 1;
+    box-sizing: border-box;
+    
+}
