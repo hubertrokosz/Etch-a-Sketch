@@ -44,9 +44,21 @@ function selectSize () {
             let randomRed = Math.floor(Math.random() * 256);
             let randomGreen = Math.floor(Math.random() * 256);
             let randomBlue = Math.floor(Math.random() * 256);
+            let alpha = 0;
 
-            arg.addEventListener("mouseenter", () => arg.style.backgroundColor = `rgb(${randomRed}, ${randomGreen}, ${randomBlue})`);
+            
+
+            arg.addEventListener("mouseenter", () => {
+
+            if (alpha < 1) {
+                alpha += 0.1;
+            }
+
+            arg.style.backgroundColor = `rgba(${randomRed}, ${randomGreen}, ${randomBlue}, ${alpha})`
+
+            });
             //arg.addEventListener("mouseleave", () => arg.style.backgroundColor = "white");
+            
     
         }
 
