@@ -41,7 +41,11 @@ function selectSize () {
         let customDiv = document.querySelectorAll(".customDiv");
     
         for (let arg of customDiv) {
-            arg.addEventListener("mouseenter", () => arg.style.backgroundColor = "black");
+            let randomRed = Math.floor(Math.random() * 256);
+            let randomGreen = Math.floor(Math.random() * 256);
+            let randomBlue = Math.floor(Math.random() * 256);
+
+            arg.addEventListener("mouseenter", () => arg.style.backgroundColor = `rgb(${randomRed}, ${randomGreen}, ${randomBlue})`);
             //arg.addEventListener("mouseleave", () => arg.style.backgroundColor = "white");
     
         }
@@ -49,6 +53,9 @@ function selectSize () {
     }
 
 }
+
+    
+    
 
 
 
